@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Pratahsin Quiz">
+        <menu>
+            <item
+                android:id="@+id/nav_quizone"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Pratahsin 1" />
+            <item
+                android:id="@+id/nav_quiztwo"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Pratahsin 2" />
+        </menu>
+    </item>
+    <item android:title="Tahsin Quiz">
+        <menu>
+            <item
+                android:id="@+id/nav_quizthree"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Tahsin 1" />
+            <item
+                android:id="@+id/nav_quizfour"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Tahsin 2" />
+        </menu>
+    </item>
+
+</menu>

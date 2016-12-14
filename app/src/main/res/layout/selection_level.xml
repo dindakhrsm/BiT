@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/a"
+        android:id="@+id/materi1"
+        app:backgroundTint="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_height="65dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/cc"
+            android:id="@+id/floatingActionButton3"
+            android:layout_weight="1"
+            app:backgroundTint="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="75dp"
+            android:layout_height="65dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/bb"
+            android:id="@+id/floatingActionButton2"
+            android:layout_weight="1"
+            app:backgroundTint="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="75dp"
+            android:layout_height="65dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/dd"
+            android:id="@+id/floatingActionButton4"
+            app:backgroundTint="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="65dp"
+            app:elevation="7dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/cc"
+            android:id="@+id/floatingActionButton13"
+            android:layout_weight="1"
+            app:backgroundTint="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="75dp"
+            android:layout_height="65dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0.09">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ff"
+                android:id="@+id/floatingActionButton5"
+                android:layout_weight="1"
+                app:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="75dp"
+                android:layout_height="65dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ee"
+                android:id="@+id/floatingActionButton6"
+                android:layout_weight="1"
+                app:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="75dp"
+                android:layout_height="65dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.93"
+            android:weightSum="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/gg"
+                android:id="@+id/floatingActionButton7"
+                app:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="65dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/ii"
+                    android:id="@+id/floatingActionButton9"
+                    android:layout_weight="1"
+                    app:backgroundTint="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="75dp"
+                    android:layout_height="65dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/hh"
+                    android:id="@+id/floatingActionButton8"
+                    android:layout_weight="1"
+                    app:backgroundTint="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="75dp"
+                    android:layout_height="65dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.06"
+                android:weightSum="1">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/jj"
+                    android:id="@+id/floatingActionButton10"
+                    app:backgroundTint="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="65dp" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    app:fabSize="mini"
+                    app:srcCompat="@drawable/kk"
+                    android:id="@+id/floatingActionButton11"
+                    app:backgroundTint="@android:color/transparent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="75dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp">
+
+                    <ImageButton
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_backward_white_24dp"
+                        android:id="@+id/back"
+                        android:layout_weight="1"
+                        android:background="@color/colorBackground"
+                        android:scaleType="fitCenter"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/a"
+                        android:id="@+id/imageView3"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginRight="120dp"/>
+
+                    <ImageButton
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_forward_white_24dp"
+                        android:id="@+id/next"
+                        android:layout_weight="1"
+                        android:background="@color/colorBackground"
+                        android:scaleType="fitCenter"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
