@@ -94,6 +94,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>
 
+        <activity
+            android:name=".Topic5Activity"
+            android:label="@string/pokok_bahasan"
+            android:parentActivityName=".TopicActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".Topic6Activity"
+            android:label="@string/pokok_bahasan"
+            android:parentActivityName=".Topic5Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
     </application>
 
 </manifest>
