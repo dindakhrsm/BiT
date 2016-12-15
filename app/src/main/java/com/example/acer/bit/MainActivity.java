@@ -126,8 +126,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_quizone) {
-            //Intent conceptIntent=new Intent(MainActivity.this,QuizActivity.class);
-           // startActivity(conceptIntent);
+            Intent questionIntent=new Intent(MainActivity.this,QuestionActivity.class);
+           startActivity(questionIntent);
         } else if (id == R.id.nav_quiztwo) {
 
         }else if (id == R.id.nav_quizthree) {
