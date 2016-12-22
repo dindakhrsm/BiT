@@ -13,9 +13,9 @@ public class LevelActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.level);
-        ImageButton pratahsin1 = (ImageButton) findViewById(R.id.pratahsin1);
+        ImageButton level1 = (ImageButton) findViewById(R.id.level1);
 
-        pratahsin1.setOnClickListener(new View.OnClickListener(){
+        level1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LevelActivity.this, PageMateriActivity.class);
