@@ -28,7 +28,7 @@ public class Topic6Activity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Topic10Activity.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +37,7 @@ public class Topic6Activity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Topic5Activity.class);
+                Intent intent = new Intent(getApplicationContext(), PageMateriActivity.class);
                 startActivity(intent);
             }
         });

@@ -9,11 +9,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageButton;
 
-/**
- * Created by Sony Center on 19-Dec-16.
- */
+public class Topic11Activity extends AppCompatActivity {
 
-public class Topic3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.topic);
@@ -21,14 +18,14 @@ public class Topic3Activity extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.webpt1);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("file:///android_asset/Lesson3.html");
+        mWebView.loadUrl("file:///android_asset/Lesson11.html");
 
         ImageButton next = (ImageButton) findViewById(R.id.next);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Topic4Activity.class);
+                Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
                 startActivity(intent);
             }
         });
@@ -45,14 +42,18 @@ public class Topic3Activity extends AppCompatActivity {
         ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.makharijulhuruf);
         huruf.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mp.isPlaying()) {
-                    mp.pause();
-                } else {
-                    mp.start();
-                }
-            }
-        });
+                                     @Override
+                                     public void onClick(View view) {
+                                         if (mp.isPlaying()) {
+                                             mp.pause();
+                                         }
+                                         else {
+                                             mp.start();
+                                         }
+                                     }
+                                 }
+        );
+
     }
+
 }
