@@ -15,13 +15,13 @@ public class PageMateriActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.selection_level);
         FloatingActionButton materi1 = (FloatingActionButton) findViewById(R.id.materi1);
-        FloatingActionButton materi2 = (FloatingActionButton) findViewById(R.id.floatingActionButton2);
-        FloatingActionButton materi3 = (FloatingActionButton) findViewById(R.id.floatingActionButton3);
-        FloatingActionButton materi4 = (FloatingActionButton) findViewById(R.id.floatingActionButton4);
-        FloatingActionButton materi5 = (FloatingActionButton) findViewById(R.id.floatingActionButton6);
-        FloatingActionButton materi6 = (FloatingActionButton) findViewById(R.id.floatingActionButton5);
-        FloatingActionButton materi10 = (FloatingActionButton) findViewById(R.id.floatingActionButton10);
-        FloatingActionButton materi11 = (FloatingActionButton) findViewById(R.id.floatingActionButton11);
+        FloatingActionButton materi2 = (FloatingActionButton) findViewById(R.id.materi2);
+        FloatingActionButton materi3 = (FloatingActionButton) findViewById(R.id.materi3);
+        FloatingActionButton materi4 = (FloatingActionButton) findViewById(R.id.materi4);
+        FloatingActionButton materi5 = (FloatingActionButton) findViewById(R.id.materi5);
+        FloatingActionButton materi6 = (FloatingActionButton) findViewById(R.id.materi6);
+        FloatingActionButton materi10 = (FloatingActionButton) findViewById(R.id.materi10);
+
 
         materi1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,13 +78,6 @@ public class PageMateriActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
-
-        materi11.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic11Activity.class);
-                startActivity(intent);
-            }
-        });
+        
     }
 }
