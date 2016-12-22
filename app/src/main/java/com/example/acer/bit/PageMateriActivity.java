@@ -78,6 +78,6 @@ public class PageMateriActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
-        
+
     }
 }
