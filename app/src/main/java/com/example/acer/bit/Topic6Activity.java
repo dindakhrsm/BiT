@@ -16,9 +16,9 @@ public class Topic6Activity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.topic6);
+        setContentView(R.layout.topic);
         WebView mWebView;
-        mWebView = (WebView) findViewById(R.id.webpt6);
+        mWebView = (WebView) findViewById(R.id.webpt1);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mWebView.loadUrl("file:///android_asset/Lesson6.html");
@@ -28,7 +28,7 @@ public class Topic6Activity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Topic10Activity.class);
+                Intent intent = new Intent(getApplicationContext(), Topic7Activity.class);
                 startActivity(intent);
             }
         });

@@ -39,14 +39,14 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        ImageButton about = (ImageButton) findViewById(R.id.about);
+      /*  ImageButton about = (ImageButton) findViewById(R.id.about);
         about.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -123,8 +123,9 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            // Handle the camera action
+        if (id == R.id.nav_info) {
+            Intent aboutIntent=new Intent(MainActivity.this,AboutActivity.class);
+            startActivity(aboutIntent);
         } else if (id == R.id.nav_quizone) {
             Intent questionIntent=new Intent(MainActivity.this,QuestionActivity.class);
            startActivity(questionIntent);

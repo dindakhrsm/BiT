@@ -20,6 +20,9 @@ public class PageMateriActivity extends AppCompatActivity{
         FloatingActionButton materi4 = (FloatingActionButton) findViewById(R.id.materi4);
         FloatingActionButton materi5 = (FloatingActionButton) findViewById(R.id.materi5);
         FloatingActionButton materi6 = (FloatingActionButton) findViewById(R.id.materi6);
+        FloatingActionButton materi7 = (FloatingActionButton) findViewById(R.id.materi7);
+        FloatingActionButton materi8 = (FloatingActionButton) findViewById(R.id.materi8);
+        FloatingActionButton materi9 = (FloatingActionButton) findViewById(R.id.materi9);
         FloatingActionButton materi10 = (FloatingActionButton) findViewById(R.id.materi10);
 
 
@@ -67,6 +70,30 @@ public class PageMateriActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PageMateriActivity.this, Topic6Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        materi7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PageMateriActivity.this, Topic7Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        materi8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PageMateriActivity.this, Topic8Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        materi9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PageMateriActivity.this, Topic9Activity.class);
                 startActivity(intent);
             }
         });

@@ -40,7 +40,7 @@ public class TopicActivity extends AppCompatActivity {
         });
         // Get the button from the view
         ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.makharijulhuruf);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.materi1a);
         huruf.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

@@ -145,9 +145,33 @@
                 android:value=".MainActivity" /></activity>
 
         <activity
-            android:name=".Topic10Activity"
+            android:name=".Topic7Activity"
             android:label="@string/pokok_bahasan"
             android:parentActivityName=".Topic6Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".Topic8Activity"
+            android:label="@string/pokok_bahasan"
+            android:parentActivityName=".Topic7Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".Topic9Activity"
+            android:label="@string/pokok_bahasan"
+            android:parentActivityName=".Topic8Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".Topic10Activity"
+            android:label="@string/pokok_bahasan"
+            android:parentActivityName=".Topic9Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>

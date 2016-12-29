@@ -1,6 +1,7 @@
 package com.example.acer.bit;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,9 +17,9 @@ public class Topic5Activity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.topic5);
+        setContentView(R.layout.topic);
         WebView mWebView;
-        mWebView = (WebView) findViewById(R.id.webpt5);
+        mWebView = (WebView) findViewById(R.id.webpt1);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mWebView.loadUrl("file:///android_asset/Lesson5.html");
@@ -39,6 +40,19 @@ public class Topic5Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PageMateriActivity.class);
                 startActivity(intent);
+            }
+        });
+        // Get the button from the view
+        ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.materi5);
+        huruf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mp.isPlaying()) {
+                    mp.pause();
+                } else {
+                    mp.start();
+                }
             }
         });
     }

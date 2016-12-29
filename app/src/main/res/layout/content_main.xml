@@ -41,13 +41,4 @@
         android:background="@color/colorButton"
         android:layout_gravity="center"/>
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/about1"
-        android:id="@+id/about"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorButton"
-        android:layout_gravity="center"/>
-
 </LinearLayout>
