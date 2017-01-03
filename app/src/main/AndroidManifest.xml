@@ -47,7 +47,7 @@
         </activity>
 
         <activity android:name=".TopicActivity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan1"
             android:parentActivityName=".PageMateriActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -63,7 +63,7 @@
         </activity>
 
         <activity android:name=".QuizActivity"
-            android:label="@string/Quiz"
+            android:label="@string/Quiz1"
             android:parentActivityName=".ExerciseActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -80,7 +80,7 @@
 
         <activity
             android:name=".QuestionActivity"
-            android:label="@string/Quiz"
+            android:label="@string/Quiz1"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -106,7 +106,7 @@
 
         <activity
             android:name=".Topic2Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan1"
             android:parentActivityName=".TopicActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -114,7 +114,7 @@
 
         <activity
             android:name=".Topic3Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan1"
             android:parentActivityName=".Topic2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -122,7 +122,7 @@
 
         <activity
             android:name=".Topic4Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan1"
             android:parentActivityName=".Topic3Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -130,7 +130,7 @@
 
         <activity
             android:name=".Topic5Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan1"
             android:parentActivityName=".Topic4Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -138,7 +138,7 @@
 
         <activity
             android:name=".Topic6Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan2"
             android:parentActivityName=".Topic5Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -146,7 +146,7 @@
 
         <activity
             android:name=".Topic7Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan2"
             android:parentActivityName=".Topic6Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -154,7 +154,7 @@
 
         <activity
             android:name=".Topic8Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan2"
             android:parentActivityName=".Topic7Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -162,7 +162,7 @@
 
         <activity
             android:name=".Topic9Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan2"
             android:parentActivityName=".Topic8Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -170,7 +170,7 @@
 
         <activity
             android:name=".Topic10Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan2"
             android:parentActivityName=".Topic9Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -178,11 +178,63 @@
 
         <activity
             android:name=".Topic11Activity"
-            android:label="@string/pokok_bahasan"
+            android:label="@string/pokok_bahasan3"
             android:parentActivityName=".Topic10Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".Question2Activity"
+            android:label="@string/Quiz2"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Result2Activity"
+            android:label="@string/str_viewans"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".ViewAnswer2Activity"
+            android:label="@string/str_viewans"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".Question3Activity"
+            android:label="@string/Quiz3"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Result3Activity"
+            android:label="@string/str_viewans"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".ViewAnswer3Activity"
+            android:label="@string/str_viewans"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+
     </application>
 
 </manifest>
