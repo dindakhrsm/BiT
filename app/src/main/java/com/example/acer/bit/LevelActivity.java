@@ -14,6 +14,8 @@ public class LevelActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.level);
         ImageButton level1 = (ImageButton) findViewById(R.id.level1);
+        ImageButton level2 = (ImageButton) findViewById(R.id.level2);
+        ImageButton level3 = (ImageButton) findViewById(R.id.level3);
 
         level1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -22,6 +24,15 @@ public class LevelActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+
+        level2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LevelActivity.this, PageMateri2Activity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }
