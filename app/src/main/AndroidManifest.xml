@@ -234,6 +234,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>
 
+        <activity
+            android:name=".Listening1Activity"
+            android:label="@string/listening_quiz1"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
 
     </application>
 
