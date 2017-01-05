@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorLevel3">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/c1"
+        android:id="@+id/materiC1"
+        app:backgroundTint="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="60dp"
+        android:layout_height="65dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/c5"
+                android:id="@+id/materiC5"
+                android:layout_weight="1"
+                app:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="75dp"
+                android:layout_height="65dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/q3"
+                android:id="@+id/quiz3"
+                app:backgroundTint="@android:color/transparent"
+                android:layout_marginTop="50dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/c2"
+                android:id="@+id/materiC2"
+                android:layout_weight="1"
+                app:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="75dp"
+                android:layout_height="65dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/c4"
+                android:id="@+id/materiC4"
+                app:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="65dp"
+                app:elevation="7dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:clickable="true"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/c3"
+                android:id="@+id/materiC3"
+                android:layout_weight="1"
+                app:backgroundTint="@android:color/transparent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="75dp"
+                android:layout_height="65dp" />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

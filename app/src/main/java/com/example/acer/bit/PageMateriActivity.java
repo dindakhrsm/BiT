@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageButton;
 
 
 public class PageMateriActivity extends AppCompatActivity{
@@ -13,20 +12,15 @@ public class PageMateriActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.selection_level);
-        FloatingActionButton materi1 = (FloatingActionButton) findViewById(R.id.materi1);
-        FloatingActionButton materi2 = (FloatingActionButton) findViewById(R.id.materi2);
-        FloatingActionButton materi3 = (FloatingActionButton) findViewById(R.id.materi3);
-        FloatingActionButton materi4 = (FloatingActionButton) findViewById(R.id.materi4);
-        FloatingActionButton materi5 = (FloatingActionButton) findViewById(R.id.materi5);
-        FloatingActionButton materi6 = (FloatingActionButton) findViewById(R.id.materi6);
-        FloatingActionButton materi7 = (FloatingActionButton) findViewById(R.id.materi7);
-        FloatingActionButton materi8 = (FloatingActionButton) findViewById(R.id.materi8);
-        FloatingActionButton materi9 = (FloatingActionButton) findViewById(R.id.materi9);
-        FloatingActionButton materi10 = (FloatingActionButton) findViewById(R.id.materi10);
+        setContentView(R.layout.selection_level1);
+        FloatingActionButton materiA1 = (FloatingActionButton) findViewById(R.id.materiA1);
+        FloatingActionButton materiA2 = (FloatingActionButton) findViewById(R.id.materiA2);
+        FloatingActionButton materiA3 = (FloatingActionButton) findViewById(R.id.materiA3);
+        FloatingActionButton materiA4 = (FloatingActionButton) findViewById(R.id.materiA4);
+        FloatingActionButton materiA5 = (FloatingActionButton) findViewById(R.id.materiA5);
 
 
-        materi1.setOnClickListener(new View.OnClickListener() {
+        materiA1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PageMateriActivity.this, TopicActivity.class);
@@ -34,7 +28,7 @@ public class PageMateriActivity extends AppCompatActivity{
             }
         });
 
-        materi2.setOnClickListener(new View.OnClickListener() {
+        materiA2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PageMateriActivity.this, Topic2Activity.class);
@@ -42,7 +36,7 @@ public class PageMateriActivity extends AppCompatActivity{
             }
         });
 
-        materi3.setOnClickListener(new View.OnClickListener() {
+        materiA3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PageMateriActivity.this, Topic3Activity.class);
@@ -50,7 +44,7 @@ public class PageMateriActivity extends AppCompatActivity{
             }
         });
 
-        materi4.setOnClickListener(new View.OnClickListener() {
+        materiA4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PageMateriActivity.this, Topic4Activity.class);
@@ -58,7 +52,7 @@ public class PageMateriActivity extends AppCompatActivity{
             }
         });
 
-        materi5.setOnClickListener(new View.OnClickListener() {
+        materiA5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(PageMateriActivity.this, Topic5Activity.class);
@@ -66,45 +60,6 @@ public class PageMateriActivity extends AppCompatActivity{
             }
         });
 
-        materi6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic6Activity.class);
-                startActivity(intent);
-            }
-        });
-
-        materi7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic7Activity.class);
-                startActivity(intent);
-            }
-        });
-
-        materi8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic8Activity.class);
-                startActivity(intent);
-            }
-        });
-
-        materi9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic9Activity.class);
-                startActivity(intent);
-            }
-        });
-
-        materi10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic10Activity.class);
-                startActivity(intent);
-            }
-        });
 
     }
 }
