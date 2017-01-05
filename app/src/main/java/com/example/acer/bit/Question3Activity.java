@@ -1,9 +1,9 @@
 package com.example.acer.bit;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,13 +12,13 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.example.acer.bit.db.DBAdapter;
+import com.example.acer.bit.db.DBAdapterthree;
 import com.example.acer.bit.model.Question;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestionActivity extends AppCompatActivity {
+public class Question3Activity extends AppCompatActivity {
 
     private List<Question> questionsList;
     private Question currentQuestion;
@@ -44,8 +44,8 @@ public class QuestionActivity extends AppCompatActivity {
         init();
 
         //Initialize the database
-        final DBAdapter dbAdapter=new DBAdapter(this);
-        questionsList= dbAdapter.getAllQuestions();
+        final DBAdapterthree dbAdapterthree=new DBAdapterthree(this);
+        questionsList= dbAdapterthree.getAllQuestions();
         currentQuestion=questionsList.get(questionId);
 
         //Set question
@@ -72,11 +72,11 @@ public class QuestionActivity extends AppCompatActivity {
                     }else{
                         Log.e("comments", "Wrong Answer");
                     }
-                    if(questionId<dbAdapter.rowCount()){
+                    if(questionId<dbAdapterthree.rowCount()){
                         currentQuestion=questionsList.get(questionId);
                         setQuestionsView();
                     }else{
-                        Intent intent = new Intent(QuestionActivity.this, ResultActivity.class);
+                        Intent intent = new Intent(Question3Activity.this, Result3Activity.class);
 
                         Bundle b = new Bundle();
                         b.putInt("score", obtainedScore);

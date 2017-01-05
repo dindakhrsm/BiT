@@ -41,6 +41,18 @@ public class Topic4Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        // Get the button from the view
+        ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.materi4);
+        huruf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mp.isPlaying()) {
+                    mp.pause();
+                } else {
+                    mp.start();
+                }
+            }
+        });
     }
 }

@@ -126,15 +126,22 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_info) {
             Intent aboutIntent=new Intent(MainActivity.this,AboutActivity.class);
             startActivity(aboutIntent);
+
         } else if (id == R.id.nav_quizone) {
-            Intent questionIntent=new Intent(MainActivity.this,QuestionActivity.class);
-           startActivity(questionIntent);
+            Intent quizoneIntent=new Intent(MainActivity.this,QuestionActivity.class);
+           startActivity(quizoneIntent);
+
         } else if (id == R.id.nav_quiztwo) {
+            Intent quiztwoIntent=new Intent(MainActivity.this,Question2Activity.class);
+            startActivity(quiztwoIntent);
 
         }else if (id == R.id.nav_quizthree) {
+            Intent quizthreeIntent=new Intent(MainActivity.this,Question3Activity.class);
+            startActivity(quizthreeIntent);
 
-        }else if (id == R.id.nav_quizfour) {
-
+        }else if (id == R.id.nav_quizlistening1) {
+            Intent quizlisteningIntent=new Intent(MainActivity.this,Listening1Activity.class);
+            startActivity(quizlisteningIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

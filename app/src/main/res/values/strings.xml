@@ -8,10 +8,15 @@
 
     <string name="check">Check</string>
     <string name="Level">Level</string>
-    <string name="pokok_bahasan">Pokok Bahasan</string>
+    <string name="pokok_bahasan1">Pokok Bahasan Level 1</string>
+    <string name="pokok_bahasan2">Pokok Bahasan Level 2</string>
+    <string name="pokok_bahasan3">Pokok Bahasan Level 3</string>
     <string name="Pratahsin1">Level 1</string>
     <string name="Soal_Latihan">Latihan Soal</string>
-    <string name="Quiz">Quiz</string>
+    <string name="Quiz1">Quiz Level 1</string>
+    <string name="Quiz2">Quiz Level 2</string>
+    <string name="Quiz3">Quiz Level 3</string>
+    <string name="listening_quiz1">Listening Quiz 1</string>
     <string name="About">About</string>
     <string name="action_exit">Keluar</string>
 

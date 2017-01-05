@@ -1,9 +1,9 @@
 package com.example.acer.bit;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,25 +12,25 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.example.acer.bit.db.DBAdapter;
+import com.example.acer.bit.db.DBAdaptertwo;
 import com.example.acer.bit.model.Question;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestionActivity extends AppCompatActivity {
+public class Question2Activity extends AppCompatActivity {
 
     private List<Question> questionsList;
     private Question currentQuestion;
 
-    private TextView txtQuestion,tvNoOfQs;
-    private RadioButton rbtnA, rbtnB, rbtnC,rbtnD;
+    private TextView txtQuestion, tvNoOfQs;
+    private RadioButton rbtnA, rbtnB, rbtnC, rbtnD;
     private Button btnNext;
 
-    private int obtainedScore=0;
-    private int questionId=0;
+    private int obtainedScore = 0;
+    private int questionId = 0;
 
-    private int answeredQsNo=0;
+    private int answeredQsNo = 0;
 
     ArrayList<String> myAnsList;
 
@@ -44,9 +44,9 @@ public class QuestionActivity extends AppCompatActivity {
         init();
 
         //Initialize the database
-        final DBAdapter dbAdapter=new DBAdapter(this);
-        questionsList= dbAdapter.getAllQuestions();
-        currentQuestion=questionsList.get(questionId);
+        final DBAdaptertwo dbAdaptertwo = new DBAdaptertwo(this);
+        questionsList = dbAdaptertwo.getAllQuestions();
+        currentQuestion = questionsList.get(questionId);
 
         //Set question
         setQuestionsView();
@@ -55,28 +55,28 @@ public class QuestionActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                RadioGroup grp=(RadioGroup)findViewById(R.id.radioGroup1);
-                RadioButton answer=(RadioButton)findViewById(grp.getCheckedRadioButtonId());
+                RadioGroup grp = (RadioGroup) findViewById(R.id.radioGroup1);
+                RadioButton answer = (RadioButton) findViewById(grp.getCheckedRadioButtonId());
 
-                Log.e("Answer ID", "Selected Positioned  value - "+grp.getCheckedRadioButtonId());
+                Log.e("Answer ID", "Selected Positioned  value - " + grp.getCheckedRadioButtonId());
 
-                if(answer!=null){
+                if (answer != null) {
                     Log.e("Answer", currentQuestion.getANSWER() + " -- " + answer.getText());
                     //Add answer to the list
-                    myAnsList.add(""+answer.getText());
+                    myAnsList.add("" + answer.getText());
 
-                    if(currentQuestion.getANSWER().equals(answer.getText())){
+                    if (currentQuestion.getANSWER().equals(answer.getText())) {
                         obtainedScore++;
                         Log.e("comments", "Correct Answer");
                         Log.d("score", "Obtained score " + obtainedScore);
-                    }else{
+                    } else {
                         Log.e("comments", "Wrong Answer");
                     }
-                    if(questionId<dbAdapter.rowCount()){
-                        currentQuestion=questionsList.get(questionId);
+                    if (questionId < dbAdaptertwo.rowCount()) {
+                        currentQuestion = questionsList.get(questionId);
                         setQuestionsView();
-                    }else{
-                        Intent intent = new Intent(QuestionActivity.this, ResultActivity.class);
+                    } else {
+                        Intent intent = new Intent(Question2Activity.this, Result2Activity.class);
 
                         Bundle b = new Bundle();
                         b.putInt("score", obtainedScore);
@@ -88,7 +88,7 @@ public class QuestionActivity extends AppCompatActivity {
 
                     }
 
-                }else{
+                } else {
                     Log.e("comments", "No Answer");
                 }
 
@@ -102,29 +102,28 @@ public class QuestionActivity extends AppCompatActivity {
 
     }
 
-    public void init(){
-        tvNoOfQs=(TextView)findViewById(R.id.tvNumberOfQuestions);
-        txtQuestion=(TextView)findViewById(R.id.tvQuestion);
-        rbtnA=(RadioButton)findViewById(R.id.radio0);
-        rbtnB=(RadioButton)findViewById(R.id.radio1);
-        rbtnC=(RadioButton)findViewById(R.id.radio2);
-        rbtnD=(RadioButton)findViewById(R.id.radio3);
+    public void init() {
+        tvNoOfQs = (TextView) findViewById(R.id.tvNumberOfQuestions);
+        txtQuestion = (TextView) findViewById(R.id.tvQuestion);
+        rbtnA = (RadioButton) findViewById(R.id.radio0);
+        rbtnB = (RadioButton) findViewById(R.id.radio1);
+        rbtnC = (RadioButton) findViewById(R.id.radio2);
+        rbtnD = (RadioButton) findViewById(R.id.radio3);
 
-        btnNext=(Button)findViewById(R.id.btnNext);
+        btnNext = (Button) findViewById(R.id.btnNext);
 
         myAnsList = new ArrayList<String>();
     }
 
 
-    private void setQuestionsView()
-    {
+    private void setQuestionsView() {
         rbtnA.setChecked(false);
         rbtnB.setChecked(false);
         rbtnC.setChecked(false);
         rbtnD.setChecked(false);
 
-        answeredQsNo=questionId+1;
-        tvNoOfQs.setText("Questions "+answeredQsNo+" of "+questionsList.size());
+        answeredQsNo = questionId + 1;
+        tvNoOfQs.setText("Questions " + answeredQsNo + " of " + questionsList.size());
 
         txtQuestion.setText(currentQuestion.getQUESTION());
         rbtnA.setText(currentQuestion.getOptionA());
