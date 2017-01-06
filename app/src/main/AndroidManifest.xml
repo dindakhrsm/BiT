@@ -46,6 +46,22 @@
                 android:value=".LevelActivity"/>
         </activity>
 
+        <activity android:name=".PageMateri2Activity"
+            android:label="Level 2"
+            android:parentActivityName=".LevelActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LevelActivity"/>
+        </activity>
+
+        <activity android:name=".PageMateri3Activity"
+            android:label="Level 3"
+            android:parentActivityName=".LevelActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LevelActivity"/>
+        </activity>
+
         <activity android:name=".TopicActivity"
             android:label="@string/pokok_bahasan1"
             android:parentActivityName=".PageMateriActivity">

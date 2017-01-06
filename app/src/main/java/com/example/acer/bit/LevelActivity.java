@@ -33,6 +33,13 @@ public class LevelActivity extends AppCompatActivity{
             }
         });
 
+        level3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LevelActivity.this, PageMateri3Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
