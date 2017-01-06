@@ -87,7 +87,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textViewWaktu"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/audio" />
+            android:src="@drawable/audio"
+            android:background="@android:color/transparent" />
 
         <Button
             android:id="@+id/buttonNext"
