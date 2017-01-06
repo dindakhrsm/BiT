@@ -140,8 +140,13 @@ public class MainActivity extends AppCompatActivity
             startActivity(quizthreeIntent);
 
         }else if (id == R.id.nav_quizlistening1) {
-            Intent quizlisteningIntent=new Intent(MainActivity.this,Listening1Activity.class);
-            startActivity(quizlisteningIntent);
+            Intent quizlisteningone=new Intent(MainActivity.this,Listening1Activity.class);
+            startActivity(quizlisteningone);
+        }
+
+        else if (id == R.id.nav_quizlistening2) {
+            Intent quizlisteningtwo=new Intent(MainActivity.this,Listening2Activity.class);
+            startActivity(quizlisteningtwo);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
