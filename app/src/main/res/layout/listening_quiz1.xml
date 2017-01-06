@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textViewWaktu"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/speaker" />
+            android:src="@drawable/audio" />
 
         <Button
             android:id="@+id/buttonNext"
@@ -119,8 +119,7 @@
             android:text="Done"
             android:layout_alignBaseline="@+id/buttonNext"
             android:layout_alignBottom="@+id/buttonNext"
-            android:layout_alignRight="@+id/buttonSuara"
-            android:layout_alignEnd="@+id/buttonSuara" />
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 </RelativeLayout>
