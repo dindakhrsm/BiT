@@ -38,7 +38,7 @@
                 android:value=".MainActivity"/>
         </activity>
 
-        <activity android:name=".PageMateriActivity"
+        <activity android:name=".PageMateri1Activity"
             android:label="@string/Pratahsin1"
             android:parentActivityName=".LevelActivity">
             <meta-data
@@ -62,20 +62,14 @@
                 android:value=".LevelActivity"/>
         </activity>
 
-        <activity android:name=".TopicActivity"
-            android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".PageMateriActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateriActivity"/>
-        </activity>
+
 
         <activity android:name=".ExerciseActivity"
             android:label="@string/Soal_Latihan"
-            android:parentActivityName=".TopicActivity">
+            android:parentActivityName=".Topic1Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".TopicActivity"/>
+                android:value=".Topic1Activity"/>
         </activity>
 
         <activity android:name=".QuizActivity"
@@ -120,26 +114,34 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>
 
-        <activity
-            android:name=".Topic2Activity"
+        <activity android:name=".Topic1Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".TopicActivity">
+            android:parentActivityName=".PageMateri1Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri1Activity"/>
+        </activity>
 
-        <activity
-            android:name=".Topic3Activity"
+        <activity android:name=".Topic2Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".Topic2Activity">
+            android:parentActivityName=".PageMateri1Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri1Activity"/>
+        </activity>
+
+        <activity android:name=".Topic3Activity"
+            android:label="@string/pokok_bahasan1"
+            android:parentActivityName=".PageMateri1Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PageMateri1Activity"/>
+        </activity>
 
         <activity
             android:name=".Topic4Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".Topic3Activity">
+            android:parentActivityName=".Topic1Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>
@@ -196,6 +198,22 @@
             android:name=".Topic11Activity"
             android:label="@string/pokok_bahasan3"
             android:parentActivityName=".Topic10Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".Topic12Activity"
+            android:label="@string/pokok_bahasan3"
+            android:parentActivityName=".Topic11Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /></activity>
+
+        <activity
+            android:name=".Topic13Activity"
+            android:label="@string/pokok_bahasan3"
+            android:parentActivityName=".Topic12Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>

@@ -10,11 +10,10 @@ import android.webkit.WebView;
 import android.widget.ImageButton;
 
 /**
- * Created by ACER on 15/12/2016.
+ * Created by Sony Center on 19-Dec-16.
  */
 
 public class Topic5Activity extends AppCompatActivity {
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.topic);
@@ -38,13 +37,13 @@ public class Topic5Activity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PageMateriActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PageMateri1Activity.class);
                 startActivity(intent);
             }
         });
         // Get the button from the view
         ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.materi5);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.materi3);
         huruf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

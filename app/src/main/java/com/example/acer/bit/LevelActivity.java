@@ -20,7 +20,7 @@ public class LevelActivity extends AppCompatActivity{
         level1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LevelActivity.this, PageMateriActivity.class);
+                Intent intent = new Intent(LevelActivity.this, PageMateri1Activity.class);
                 startActivity(intent);
             }
         });

@@ -8,10 +8,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageButton;
 
-/**
- * Created by ACER on 28/12/2016.
- */
-
 public class Topic9Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +32,10 @@ public class Topic9Activity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PageMateriActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PageMateri2Activity.class);
                 startActivity(intent);
             }
         });
     }
+
 }

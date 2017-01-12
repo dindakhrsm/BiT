@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 
-public class PageMateriActivity extends AppCompatActivity{
+public class PageMateri1Activity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class PageMateriActivity extends AppCompatActivity{
         materiA1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, TopicActivity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic1Activity.class);
                 startActivity(intent);
             }
         });
@@ -31,7 +31,7 @@ public class PageMateriActivity extends AppCompatActivity{
         materiA2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic2Activity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic4Activity.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class PageMateriActivity extends AppCompatActivity{
         materiA3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic3Activity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic5Activity.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +47,7 @@ public class PageMateriActivity extends AppCompatActivity{
         materiA4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic4Activity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic6Activity.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class PageMateriActivity extends AppCompatActivity{
         materiA5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, Topic5Activity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic7Activity.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +63,7 @@ public class PageMateriActivity extends AppCompatActivity{
         quiz1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateriActivity.this, QuestionActivity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, QuestionActivity.class);
                 startActivity(intent);
             }
         });

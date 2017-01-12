@@ -1,7 +1,6 @@
 package com.example.acer.bit;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -9,8 +8,11 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageButton;
 
-public class Topic11Activity extends AppCompatActivity {
+/**
+ * Created by ACER on 28/12/2016.
+ */
 
+public class Topic11Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.topic);
@@ -25,7 +27,7 @@ public class Topic11Activity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Topic12Activity.class);
                 startActivity(intent);
             }
         });
@@ -34,12 +36,9 @@ public class Topic11Activity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PageMateriActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PageMateri3Activity.class);
                 startActivity(intent);
             }
         });
-
-
     }
-
 }

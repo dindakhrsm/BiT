@@ -32,25 +32,13 @@
                 android:layout_width="match_parent"
                 android:clickable="true"
                 app:fabSize="mini"
-                app:srcCompat="@drawable/c5"
-                android:id="@+id/materiC5"
+                app:srcCompat="@drawable/c3"
+                android:id="@+id/materiC3"
                 android:layout_weight="1"
                 app:backgroundTint="@android:color/transparent"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginRight="75dp"
                 android:layout_height="65dp" />
-
-            <android.support.design.widget.FloatingActionButton
-                android:layout_width="match_parent"
-                android:clickable="true"
-                app:fabSize="mini"
-                app:srcCompat="@drawable/q3"
-                android:id="@+id/quiz3"
-                app:backgroundTint="@android:color/transparent"
-                android:layout_marginTop="50dp"
-                android:layout_height="65dp"
-                android:layout_weight="1"
-                android:layout_gravity="center_horizontal" />
 
             <android.support.design.widget.FloatingActionButton
                 android:layout_width="match_parent"
@@ -80,24 +68,13 @@
                 android:layout_width="match_parent"
                 android:clickable="true"
                 app:fabSize="mini"
-                app:srcCompat="@drawable/c4"
-                android:id="@+id/materiC4"
+                app:srcCompat="@drawable/q3"
+                android:id="@+id/quiz3"
                 app:backgroundTint="@android:color/transparent"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
                 android:layout_height="65dp"
-                app:elevation="7dp" />
-
-            <android.support.design.widget.FloatingActionButton
-                android:layout_width="match_parent"
-                android:clickable="true"
-                app:fabSize="mini"
-                app:srcCompat="@drawable/c3"
-                android:id="@+id/materiC3"
                 android:layout_weight="1"
-                app:backgroundTint="@android:color/transparent"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="75dp"
-                android:layout_height="65dp" />
+                android:layout_gravity="center_horizontal" />
         </LinearLayout>
         </LinearLayout>
     </LinearLayout>
