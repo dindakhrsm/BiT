@@ -46,8 +46,7 @@ public class LevelActivity extends AppCompatActivity{
         home.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LevelActivity.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 

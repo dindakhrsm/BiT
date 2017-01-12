@@ -38,19 +38,23 @@ import java.util.concurrent.TimeUnit;
 public class Listening1Activity extends Activity {
 
     private DBListeningone db;
+    private List<Soal> listSoal;
+
     private TextView txtnama, txtno, txttanggal, txtwaktu, txtsoal;
-    // private ImageView img;
     private ImageButton buttonSuara;
     private RadioGroup rg;
     private RadioButton rdA, rdB, rdC;
-    private List<Soal> listSoal;
+    private Button btnPrev, btnNext, btnSelesai;
+
     private CounterClass mCountDownTimer;
     private int detik = 120000; // --> 10 menit
-    private Button btnPrev, btnNext, btnSelesai;
-    int jawabanYgDiPilih[] = null;
-    int jawabanYgBenar[] = null;
+
     boolean cekPertanyaan = false;
     int urutanPertanyaan = 0;
+
+    int jawabanYgDiPilih[] = null;
+    int jawabanYgBenar[] = null;
+
     String noSalah = "";
 
     @Override
@@ -58,20 +62,23 @@ public class Listening1Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listening_quiz1);
         db = new DBListeningone(this);
+
         txtnama = (TextView) findViewById(R.id.textViewNama);
         txtno = (TextView) findViewById(R.id.textViewHalaman);
         txttanggal = (TextView) findViewById(R.id.textViewTanggal);
         txtwaktu = (TextView) findViewById(R.id.textViewWaktu);
+
         txtsoal = (TextView) findViewById(R.id.textViewSoal2);
-        // img = (ImageView) findViewById(R.id.gambarKuis);
         buttonSuara = (ImageButton) findViewById(R.id.buttonSuara);
         rg = (RadioGroup) findViewById(R.id.radioGroup1);
         rdA = (RadioButton) findViewById(R.id.radio0);
         rdB = (RadioButton) findViewById(R.id.radio1);
         rdC = (RadioButton) findViewById(R.id.radio2);
+
         btnPrev = (Button) findViewById(R.id.buttonPrev);
         btnNext = (Button) findViewById(R.id.buttonNext);
         btnSelesai = (Button) findViewById(R.id.buttonSelesai);
+
         final Calendar c = Calendar.getInstance();
         int day = c.get(Calendar.DAY_OF_MONTH);
         int month = c.get(Calendar.MONTH);
@@ -105,6 +112,15 @@ public class Listening1Activity extends Activity {
 
         final Button btnOk = (Button) v.findViewById(R.id.buttonOK);
         final EditText inputUser = (EditText) v.findViewById(R.id.editTextNama);
+        final Button btnCancel = (Button) v.findViewById(R.id.buttonCancel);
+
+        btnCancel.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                finish();
+            }
+        });
 
         btnOk.setOnClickListener(new View.OnClickListener()
         {
@@ -252,8 +268,6 @@ public class Listening1Activity extends Activity {
                         public void onClick(DialogInterface dialog, int which) {
                             cekPertanyaan = false;
                             finish();
-                            Intent quizlistening = new Intent(Listening1Activity.this,MainActivity.class);
-                            startActivity(quizlistening);
                         }
                     });
 
@@ -320,8 +334,6 @@ public class Listening1Activity extends Activity {
                         public void onClick(DialogInterface dialog, int which) {
                             cekPertanyaan = false;
                             finish();
-                            Intent quizlistening1 =new Intent(Listening1Activity.this,MainActivity.class);
-                            startActivity(quizlistening1);
                         }
                     });
 

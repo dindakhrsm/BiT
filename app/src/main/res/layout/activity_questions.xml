@@ -13,10 +13,18 @@
         android:id="@+id/relativeLayout">
 
         <TextView
+            android:id="@+id/textViewNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tvNumberOfQuestions"
-            android:text="BiT Questions"
+            android:text="Number of Questions"
             android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -27,7 +35,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tvQuestion"
             android:layout_below="@+id/tvNumberOfQuestions"
-            android:text="ICT questions"
+            android:text="BiT questions"
             android:textSize="18sp"
             android:layout_marginTop="10dp"
             android:textStyle="normal"

@@ -105,6 +105,15 @@ public class Listening2Activity extends Activity {
 
         final Button btnOk = (Button) v.findViewById(R.id.buttonOK);
         final EditText inputUser = (EditText) v.findViewById(R.id.editTextNama);
+        final Button btnCancel = (Button) v.findViewById(R.id.buttonCancel);
+
+        btnCancel.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                finish();
+            }
+        });
 
         btnOk.setOnClickListener(new View.OnClickListener()
         {

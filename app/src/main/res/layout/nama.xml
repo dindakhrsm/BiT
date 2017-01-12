@@ -11,19 +11,32 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:ems="10"
-        android:inputType="textPersonName" >
+        android:inputType="textPersonName"
+        android:hint="Name">
 
         <requestFocus />
     </EditText>
 
     <Button
-        android:id="@+id/buttonOK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:id="@+id/buttonCancel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Cancel"
+        android:layout_marginRight="98dp"
+        android:layout_marginEnd="98dp"
+        android:layout_alignBaseline="@+id/buttonOK"
+        android:layout_alignBottom="@+id/buttonOK"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="OK"
+        android:layout_marginTop="27dp"
         android:layout_below="@+id/editTextNama"
-        android:layout_marginTop="21dp"
-        android:text="OK" />
+        android:layout_toLeftOf="@+id/buttonCancel"
+        android:layout_toStartOf="@+id/buttonCancel" />
 
 </RelativeLayout>

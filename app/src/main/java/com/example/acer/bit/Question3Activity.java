@@ -1,16 +1,20 @@
 package com.example.acer.bit;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.acer.bit.db.DBAdapterthree;
 import com.example.acer.bit.model.Question;
@@ -23,7 +27,7 @@ public class Question3Activity extends AppCompatActivity {
     private List<Question> questionsList;
     private Question currentQuestion;
 
-    private TextView txtQuestion,tvNoOfQs;
+    private TextView txtQuestion,tvNoOfQs, txtnama;
     private RadioButton rbtnA, rbtnB, rbtnC,rbtnD;
     private Button btnNext;
 
@@ -39,6 +43,9 @@ public class Question3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
+        txtnama = (TextView) findViewById(R.id.textViewNama);
+
+        showInputUser();
 
         //Initialize the view
         init();
@@ -47,9 +54,6 @@ public class Question3Activity extends AppCompatActivity {
         final DBAdapterthree dbAdapterthree=new DBAdapterthree(this);
         questionsList= dbAdapterthree.getAllQuestions();
         currentQuestion=questionsList.get(questionId);
-
-        //Set question
-        setQuestionsView();
 
         //Check and Next
         btnNext.setOnClickListener(new View.OnClickListener() {
@@ -114,6 +118,59 @@ public class Question3Activity extends AppCompatActivity {
 
         myAnsList = new ArrayList<String>();
     }
+
+    private void showInputUser() {
+        LayoutInflater mInflater = LayoutInflater.from(this);
+        View v = mInflater.inflate(R.layout.nama, null);
+
+        final AlertDialog dialog = new AlertDialog.Builder(this).create();
+
+        dialog.setView(v);
+        dialog.setTitle("Insert Your Name");
+        dialog.setIcon(R.drawable.ic_launcher);
+        dialog.setCancelable(false);
+
+        final Button btnOk = (Button) v.findViewById(R.id.buttonOK);
+        final EditText inputUser = (EditText) v.findViewById(R.id.editTextNama);
+        final Button btnCancel = (Button) v.findViewById(R.id.buttonCancel);
+
+        btnCancel.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v)
+            {
+                finish();
+            }
+        });
+
+        btnOk.setOnClickListener(new View.OnClickListener()
+        {
+
+            @Override
+            public void onClick(View v)
+            {
+                if(inputUser.getText().toString().equals("")){
+                    Toast.makeText(getBaseContext(), "Isi dulu", Toast.LENGTH_LONG).show();
+                }else{
+                    txtnama.setText(inputUser.getText().toString());
+                    mulaiKuis();
+                    dialog.dismiss();
+                }
+
+            }
+        });
+        dialog.show();
+    }
+
+    protected void mulaiKuis() {
+        // setUpWaktu();
+        setQuestionsView();
+
+    }
+
+   /* private void setUpWaktu() {
+        mCountDownTimer = new QuestionActivity.CounterClass(detik, 1000);
+        mCountDownTimer.start();
+    }*/
 
 
     private void setQuestionsView()
