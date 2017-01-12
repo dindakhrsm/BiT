@@ -46,7 +46,7 @@ public class PageMateri3Activity extends AppCompatActivity{
         quiz3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri3Activity.this, Question2Activity.class);
+                Intent intent = new Intent(PageMateri3Activity.this, Question3Activity.class);
                 startActivity(intent);
             }
         });
