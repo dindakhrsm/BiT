@@ -124,7 +124,7 @@
 
         <activity android:name=".Topic2Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".PageMateri1Activity">
+            android:parentActivityName=".Topic1Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PageMateri1Activity"/>
@@ -132,7 +132,7 @@
 
         <activity android:name=".Topic3Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".PageMateri1Activity">
+            android:parentActivityName=".Topic2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PageMateri1Activity"/>
@@ -141,7 +141,7 @@
         <activity
             android:name=".Topic4Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".Topic1Activity">
+            android:parentActivityName=".Topic3Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" /></activity>
