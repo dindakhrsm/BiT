@@ -20,7 +20,7 @@ public class Topic11Activity extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.webpt1);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("file:///android_asset/Lesson10.html");
+        mWebView.loadUrl("file:///android_asset/Lesson12.html");
 
         ImageButton next = (ImageButton) findViewById(R.id.next);
 
