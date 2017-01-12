@@ -15,7 +15,6 @@
         app:backgroundTint="@android:color/transparent"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="200dp"
-        android:layout_marginBottom="60dp"
         android:layout_height="65dp" />
 
     <LinearLayout
@@ -26,6 +25,7 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
             android:gravity="center">
 
             <android.support.design.widget.FloatingActionButton
@@ -56,12 +56,12 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_height="wrap_content">
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
             android:gravity="center">
 
             <android.support.design.widget.FloatingActionButton
