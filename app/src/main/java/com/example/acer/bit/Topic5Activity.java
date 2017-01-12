@@ -28,7 +28,7 @@ public class Topic5Activity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Topic6Activity.class);
+                Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +43,7 @@ public class Topic5Activity extends AppCompatActivity {
         });
         // Get the button from the view
         ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.materi3);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.mad2);
         huruf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

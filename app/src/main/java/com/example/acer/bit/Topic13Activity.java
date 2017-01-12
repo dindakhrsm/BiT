@@ -25,7 +25,7 @@ public class Topic13Activity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Question3Activity.class);
                 startActivity(intent);
             }
         });

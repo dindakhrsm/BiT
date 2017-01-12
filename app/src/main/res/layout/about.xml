@@ -124,7 +124,7 @@
         android:clickable="true"
         app:fabSize="mini"
         app:srcCompat="@drawable/ic_home_white_24dp"
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/fabhome"
         app:backgroundTint="@color/colorlevel"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"/>

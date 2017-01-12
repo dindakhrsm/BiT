@@ -101,19 +101,19 @@ public class DBAdapter extends SQLiteOpenHelper {
     {
         //format is question-option1-option2-option3-option4-answer
 
-        Question q1=new Question("Setiap nun sukun atau tanwin bertemu salah satu huruf ﺍ ﺡ ﺥ ﻉ ﻍ ﻫ dinamakan bacaan","Idghom Bigunnah", "Idzhar", "Ikhfa", "Iqlab","Idzhar");
+        Question q1=new Question("Hukum Bacaan Mad yang terjadi karena huruf berharkat fathah bertemu dengan wau atau ya sukun disebut...","Mad Iwadh", "Mad Tamkin", "Mad Layyin", "Mad Badal","Mad Layyin");
         this.addQuestion(q1);
 
-        Question q2=new Question("Setiap ada ﻦﱠ atau ﻢﱠ dalam ilmu tajwid dinamakan bacaan","Idghom Bilaghunnah", "Idghom Bighunnah", "Iqlab", "Ikhfa","Idghom Bighunnah");
+        Question q2=new Question("Disebut apakah Hukum bacaan Mad yang terjadi karena bertemunya Mad Thabi'i dengan hamzah disatu kata... ","Mad Iwadh", "Mad Aridh Lissukun", "Mad Wajib Muthassil", "Mad Jaiz Munfasshil","Mad Wajib Muthassil");
         this.addQuestion(q2);
 
-        Question q3=new Question("Hukum Nun sukun/tanwin ada berapa","3", "7", "5", "15","5");
+        Question q3=new Question("Panjang bacaan kalimat yang termasuk mad 'iwad adalah….","dua harokat", "tiga harokat", "empat harokat", "lima harokat","dua harokat");
         this.addQuestion(q3);
 
-        Question q4=new Question("Ada berapa hukum mim sukun","4", "5", "15", "3","3");
+        Question q4=new Question("Tanda waqof صلى artinya adalah….","tidak boleh berhenti", "diutamakan lanjut", "boleh berhenti boleh lanjut", "lebih baik berhenti","diutamakan lanjut");
         this.addQuestion(q4);
 
-        Question q5=new Question("Berikut yang bukan termasuk hukum bacaan nun mati dan tanwin adalah","Idzhar", "Iqlab", "Idghom Bighunnah", "Idzhar Syafawi","Idzhar Syafawi");
+        Question q5=new Question("Bacaan berikut ini adalah contoh bacaan...مَنْ جَآءَكَ","Mad Silah Qasirah", "Mad Badal", "Mad Wajib Muttashil", "Mad Jaiz Munfasil","Mad Wajib Muttashil");
         this.addQuestion(q5);
     }
 
