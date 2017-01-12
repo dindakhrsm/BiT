@@ -24,7 +24,7 @@ public class PageMateri2Activity extends AppCompatActivity{
         materiB1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri2Activity.this, Topic8Activity.class);
+                Intent intent = new Intent(PageMateri2Activity.this, Topic6Activity.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +32,7 @@ public class PageMateri2Activity extends AppCompatActivity{
         materiB2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri2Activity.this, Topic9Activity.class);
+                Intent intent = new Intent(PageMateri2Activity.this, Topic7Activity.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +40,7 @@ public class PageMateri2Activity extends AppCompatActivity{
         materiB3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri2Activity.this, Topic10Activity.class);
+                Intent intent = new Intent(PageMateri2Activity.this, Topic8Activity.class);
                 startActivity(intent);
             }
         });
@@ -48,7 +48,7 @@ public class PageMateri2Activity extends AppCompatActivity{
         materiB4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri2Activity.this, Topic11Activity.class);
+                Intent intent = new Intent(PageMateri2Activity.this, Topic9Activity.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +56,7 @@ public class PageMateri2Activity extends AppCompatActivity{
         materiB5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri2Activity.this, Topic12Activity.class);
+                Intent intent = new Intent(PageMateri2Activity.this, Topic10Activity.class);
                 startActivity(intent);
             }
         });

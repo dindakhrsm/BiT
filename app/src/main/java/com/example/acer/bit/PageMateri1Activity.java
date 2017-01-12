@@ -31,7 +31,7 @@ public class PageMateri1Activity extends AppCompatActivity{
         materiA2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri1Activity.this, Topic4Activity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic2Activity.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class PageMateri1Activity extends AppCompatActivity{
         materiA3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri1Activity.this, Topic5Activity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic3Activity.class);
                 startActivity(intent);
             }
         });
@@ -47,7 +47,7 @@ public class PageMateri1Activity extends AppCompatActivity{
         materiA4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri1Activity.this, Topic6Activity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic4Activity.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class PageMateri1Activity extends AppCompatActivity{
         materiA5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PageMateri1Activity.this, Topic7Activity.class);
+                Intent intent = new Intent(PageMateri1Activity.this, Topic5Activity.class);
                 startActivity(intent);
             }
         });
