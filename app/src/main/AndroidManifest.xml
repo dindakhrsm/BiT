@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.acer.bit">
+    package="com.fissilmi.acer.bit">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".Splashscreen"
+            android:name="com.fissilmi.acer.bit.Splashscreen"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.fissilmi.acer.bit.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/app_name">
             <intent-filter>
@@ -30,250 +30,250 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LevelActivity"
+        <activity android:name="com.fissilmi.acer.bit.LevelActivity"
             android:label="@string/Level"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value="com.fissilmi.acer.bit.MainActivity"/>
         </activity>
 
-        <activity android:name=".PageMateri1Activity"
+        <activity android:name="com.fissilmi.acer.bit.PageMateri1Activity"
             android:label="@string/Pratahsin1"
-            android:parentActivityName=".LevelActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.LevelActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LevelActivity"/>
+                android:value="com.fissilmi.acer.bit.LevelActivity"/>
         </activity>
 
-        <activity android:name=".PageMateri2Activity"
+        <activity android:name="com.fissilmi.acer.bit.PageMateri2Activity"
             android:label="Level 2"
-            android:parentActivityName=".LevelActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.LevelActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LevelActivity"/>
+                android:value="com.fissilmi.acer.bit.LevelActivity"/>
         </activity>
 
-        <activity android:name=".PageMateri3Activity"
+        <activity android:name="com.fissilmi.acer.bit.PageMateri3Activity"
             android:label="Level 3"
-            android:parentActivityName=".LevelActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.LevelActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LevelActivity"/>
+                android:value="com.fissilmi.acer.bit.LevelActivity"/>
         </activity>
 
 
-        <activity android:name=".AboutActivity"
+        <activity android:name="com.fissilmi.acer.bit.AboutActivity"
             android:label="@string/About"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value="com.fissilmi.acer.bit.MainActivity"/>
         </activity>
 
         <activity
-            android:name=".QuestionActivity"
+            android:name="com.fissilmi.acer.bit.QuestionActivity"
             android:label="@string/Quiz1"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.fissilmi.acer.bit.MainActivity" />
         </activity>
 
         <activity
-            android:name=".ResultActivity"
+            android:name="com.fissilmi.acer.bit.ResultActivity"
             android:label="@string/str_results"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.fissilmi.acer.bit.MainActivity" />
         </activity>
 
         <activity
-            android:name=".ViewAnswerActivity"
+            android:name="com.fissilmi.acer.bit.ViewAnswerActivity"
             android:label="@string/str_viewans"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value="com.fissilmi.acer.bit.MainActivity" /></activity>
 
-        <activity android:name=".Topic1Activity"
+        <activity android:name="com.fissilmi.acer.bit.Topic1Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".PageMateri1Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.PageMateri1Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri1Activity"/>
+                android:value="com.fissilmi.acer.bit.PageMateri1Activity"/>
         </activity>
 
-        <activity android:name=".Topic2Activity"
+        <activity android:name="com.fissilmi.acer.bit.Topic2Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".Topic1Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic1Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri1Activity"/>
+                android:value="com.fissilmi.acer.bit.PageMateri1Activity"/>
         </activity>
 
-        <activity android:name=".Topic3Activity"
+        <activity android:name="com.fissilmi.acer.bit.Topic3Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".Topic2Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic2Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri1Activity"/>
+                android:value="com.fissilmi.acer.bit.PageMateri1Activity"/>
         </activity>
 
         <activity
-            android:name=".Topic4Activity"
+            android:name="com.fissilmi.acer.bit.Topic4Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".Topic3Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic3Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri1Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri1Activity" /></activity>
 
         <activity
-            android:name=".Topic5Activity"
+            android:name="com.fissilmi.acer.bit.Topic5Activity"
             android:label="@string/pokok_bahasan1"
-            android:parentActivityName=".Topic4Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic4Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri1Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri1Activity" /></activity>
 
         <activity
-            android:name=".Topic6Activity"
+            android:name="com.fissilmi.acer.bit.Topic6Activity"
             android:label="@string/pokok_bahasan2"
-            android:parentActivityName=".Topic5Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic5Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri2Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri2Activity" /></activity>
 
         <activity
-            android:name=".Topic7Activity"
+            android:name="com.fissilmi.acer.bit.Topic7Activity"
             android:label="@string/pokok_bahasan2"
-            android:parentActivityName=".Topic6Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic6Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri2Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri2Activity" /></activity>
 
         <activity
-            android:name=".Topic8Activity"
+            android:name="com.fissilmi.acer.bit.Topic8Activity"
             android:label="@string/pokok_bahasan2"
-            android:parentActivityName=".Topic7Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic7Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri2Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri2Activity" /></activity>
 
         <activity
-            android:name=".Topic9Activity"
+            android:name="com.fissilmi.acer.bit.Topic9Activity"
             android:label="@string/pokok_bahasan2"
-            android:parentActivityName=".Topic8Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic8Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri2Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri2Activity" /></activity>
 
         <activity
-            android:name=".Topic10Activity"
+            android:name="com.fissilmi.acer.bit.Topic10Activity"
             android:label="@string/pokok_bahasan2"
-            android:parentActivityName=".Topic9Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic9Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri2Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri2Activity" /></activity>
 
         <activity
-            android:name=".Topic11Activity"
+            android:name="com.fissilmi.acer.bit.Topic11Activity"
             android:label="@string/pokok_bahasan3"
-            android:parentActivityName=".Topic10Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic10Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri3Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri3Activity" /></activity>
 
         <activity
-            android:name=".Topic12Activity"
+            android:name="com.fissilmi.acer.bit.Topic12Activity"
             android:label="@string/pokok_bahasan3"
-            android:parentActivityName=".Topic11Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic11Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri3Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri3Activity" /></activity>
 
         <activity
-            android:name=".Topic13Activity"
+            android:name="com.fissilmi.acer.bit.Topic13Activity"
             android:label="@string/pokok_bahasan3"
-            android:parentActivityName=".Topic12Activity">
+            android:parentActivityName="com.fissilmi.acer.bit.Topic12Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PageMateri3Activity" /></activity>
+                android:value="com.fissilmi.acer.bit.PageMateri3Activity" /></activity>
 
         <activity
-            android:name=".Question2Activity"
+            android:name="com.fissilmi.acer.bit.Question2Activity"
             android:label="@string/Quiz2"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.fissilmi.acer.bit.MainActivity" />
         </activity>
 
         <activity
-            android:name=".Result2Activity"
+            android:name="com.fissilmi.acer.bit.Result2Activity"
             android:label="@string/str_viewans"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value="com.fissilmi.acer.bit.MainActivity" /></activity>
 
         <activity
-            android:name=".ViewAnswer2Activity"
+            android:name="com.fissilmi.acer.bit.ViewAnswer2Activity"
             android:label="@string/str_viewans"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value="com.fissilmi.acer.bit.MainActivity" /></activity>
 
         <activity
-            android:name=".Question3Activity"
+            android:name="com.fissilmi.acer.bit.Question3Activity"
             android:label="@string/Quiz3"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.fissilmi.acer.bit.MainActivity" />
         </activity>
 
         <activity
-            android:name=".Result3Activity"
+            android:name="com.fissilmi.acer.bit.Result3Activity"
             android:label="@string/str_viewans"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value="com.fissilmi.acer.bit.MainActivity" /></activity>
 
         <activity
-            android:name=".ViewAnswer3Activity"
+            android:name="com.fissilmi.acer.bit.ViewAnswer3Activity"
             android:label="@string/str_viewans"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value="com.fissilmi.acer.bit.MainActivity" /></activity>
 
         <activity
-            android:name=".Listening1Activity"
+            android:name="com.fissilmi.acer.bit.Listening1Activity"
             android:label="@string/listening_quiz1"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value="com.fissilmi.acer.bit.MainActivity" /></activity>
 
         <activity
-            android:name=".Listening2Activity"
+            android:name="com.fissilmi.acer.bit.Listening2Activity"
             android:label="@string/listening_quiz2"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value="com.fissilmi.acer.bit.MainActivity" /></activity>
 
         <activity
-            android:name=".Listening3Activity"
+            android:name="com.fissilmi.acer.bit.Listening3Activity"
             android:label="@string/listening_quiz3"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.fissilmi.acer.bit.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value="com.fissilmi.acer.bit.MainActivity" /></activity>
 
 
     </application>
