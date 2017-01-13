@@ -19,7 +19,7 @@ public class PageMateri2Activity extends AppCompatActivity{
         FloatingActionButton materiB4 = (FloatingActionButton) findViewById(R.id.materiB4);
         FloatingActionButton materiB5 = (FloatingActionButton) findViewById(R.id.materiB5);
         FloatingActionButton quiz2 = (FloatingActionButton) findViewById(R.id.quiz2);
-
+        FloatingActionButton home2 = (FloatingActionButton) findViewById(R.id.home2);
 
         materiB1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,5 +69,11 @@ public class PageMateri2Activity extends AppCompatActivity{
             }
         });
 
+        home2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

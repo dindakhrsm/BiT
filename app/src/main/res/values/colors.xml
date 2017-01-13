@@ -11,6 +11,7 @@
     <color name="colorWhite">#ffffff</color>
 
     <color name="colorButton">#bbdefb</color>
-
+    <color name="colorHome2">#e53935</color>
+    <color name="colorHome3">#f9a825</color>
     <color name="colorAccent">#ff4081</color>
 </resources>
