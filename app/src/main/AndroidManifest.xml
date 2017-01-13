@@ -127,7 +127,7 @@
             android:parentActivityName=".Topic3Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri1Activity" /></activity>
 
         <activity
             android:name=".Topic5Activity"
@@ -135,7 +135,7 @@
             android:parentActivityName=".Topic4Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri1Activity" /></activity>
 
         <activity
             android:name=".Topic6Activity"
@@ -143,7 +143,7 @@
             android:parentActivityName=".Topic5Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri2Activity" /></activity>
 
         <activity
             android:name=".Topic7Activity"
@@ -151,7 +151,7 @@
             android:parentActivityName=".Topic6Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri2Activity" /></activity>
 
         <activity
             android:name=".Topic8Activity"
@@ -159,7 +159,7 @@
             android:parentActivityName=".Topic7Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri2Activity" /></activity>
 
         <activity
             android:name=".Topic9Activity"
@@ -167,7 +167,7 @@
             android:parentActivityName=".Topic8Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri2Activity" /></activity>
 
         <activity
             android:name=".Topic10Activity"
@@ -175,7 +175,7 @@
             android:parentActivityName=".Topic9Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri2Activity" /></activity>
 
         <activity
             android:name=".Topic11Activity"
@@ -183,7 +183,7 @@
             android:parentActivityName=".Topic10Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri3Activity" /></activity>
 
         <activity
             android:name=".Topic12Activity"
@@ -191,7 +191,7 @@
             android:parentActivityName=".Topic11Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri3Activity" /></activity>
 
         <activity
             android:name=".Topic13Activity"
@@ -199,7 +199,7 @@
             android:parentActivityName=".Topic12Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" /></activity>
+                android:value=".PageMateri3Activity" /></activity>
 
         <activity
             android:name=".Question2Activity"

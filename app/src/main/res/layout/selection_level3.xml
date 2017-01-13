@@ -14,7 +14,7 @@
         android:id="@+id/materiC1"
         app:backgroundTint="@android:color/transparent"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_height="65dp" />
 
     <LinearLayout
@@ -71,7 +71,6 @@
                 app:srcCompat="@drawable/q3"
                 android:id="@+id/quiz3"
                 app:backgroundTint="@android:color/transparent"
-                android:layout_marginTop="50dp"
                 android:layout_height="65dp"
                 android:layout_weight="1"
                 android:layout_gravity="center_horizontal" />
