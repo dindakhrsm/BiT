@@ -18,7 +18,7 @@ public class Topic13Activity extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.webpt1);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("file:///android_asset/tasydid2.html");
+        mWebView.loadUrl("file:///android_asset/tasydidashli.html");
 
         ImageButton next = (ImageButton) findViewById(R.id.next);
 
