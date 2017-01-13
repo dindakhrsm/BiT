@@ -12,11 +12,11 @@
         app:srcCompat="@drawable/page1"
         android:id="@+id/imageView12"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:text="Leader Of Project"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:background="@color/colorPrimary"
@@ -27,7 +27,7 @@
 
     <TextView
         android:text="Ummu Kultsum"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:textStyle="normal|bold"
@@ -39,7 +39,7 @@
 
     <TextView
         android:text="Design and Testing"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
         android:background="@color/colorPrimary"
@@ -51,7 +51,7 @@
 
     <TextView
         android:text="Rahmi Putri"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
         android:textStyle="normal|bold"
@@ -63,7 +63,7 @@
 
     <TextView
         android:text="Analysis and Implementation"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView5"
         android:background="@color/colorPrimary"
@@ -75,7 +75,7 @@
 
     <TextView
         android:text="Dinda Kharisma"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"
         android:textStyle="normal|bold"
@@ -87,7 +87,7 @@
 
     <TextView
         android:text="Maintenance and Documentation"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:textSize="15sp"
@@ -98,7 +98,7 @@
 
     <TextView
         android:text="Ghina Rosika Amalina"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textStyle="normal|bold"
         android:textAlignment="center"
