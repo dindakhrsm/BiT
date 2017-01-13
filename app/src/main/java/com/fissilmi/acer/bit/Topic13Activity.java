@@ -38,6 +38,19 @@ public class Topic13Activity extends AppCompatActivity {
             }
         });
 
+        ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.tasydidashli);
+        huruf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mp.isPlaying()) {
+                    mp.pause();
+                } else {
+                    mp.start();
+                }
+            }
+        });
+
 
     }
 
