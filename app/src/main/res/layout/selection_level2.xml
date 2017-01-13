@@ -102,16 +102,7 @@
                 android:layout_height="65dp" />
         </LinearLayout>
         </LinearLayout>
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            app:fabSize="mini"
-            app:srcCompat="@drawable/ic_home_white_24dp"
-            android:id="@+id/home2"
-            app:backgroundTint="@color/colorHome2"
-            android:layout_marginTop="100dp"
-            android:layout_gravity="center"/>
+
     </LinearLayout>
 
 

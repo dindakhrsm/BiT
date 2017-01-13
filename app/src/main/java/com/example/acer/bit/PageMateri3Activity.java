@@ -17,8 +17,6 @@ public class PageMateri3Activity extends AppCompatActivity{
         FloatingActionButton materiC2 = (FloatingActionButton) findViewById(R.id.materiC2);
         FloatingActionButton materiC3 = (FloatingActionButton) findViewById(R.id.materiC3);
         FloatingActionButton quiz3 = (FloatingActionButton) findViewById(R.id.quiz3);
-        FloatingActionButton home3 = (FloatingActionButton) findViewById(R.id.home3);
-
 
         materiC1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,13 +47,6 @@ public class PageMateri3Activity extends AppCompatActivity{
             public void onClick(View view) {
                 Intent intent = new Intent(PageMateri3Activity.this, Question3Activity.class);
                 startActivity(intent);
-            }
-        });
-
-        home3.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                finish();
             }
         });
     }
