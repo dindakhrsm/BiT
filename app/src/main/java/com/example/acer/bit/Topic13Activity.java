@@ -18,14 +18,14 @@ public class Topic13Activity extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.webpt1);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("file:///android_asset/Lesson13.html");
+        mWebView.loadUrl("file:///android_asset/tasydid2.html");
 
         ImageButton next = (ImageButton) findViewById(R.id.next);
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), QuestionActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Question3Activity.class);
                 startActivity(intent);
             }
         });

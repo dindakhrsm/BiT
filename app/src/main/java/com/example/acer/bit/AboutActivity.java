@@ -12,9 +12,9 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
-        FloatingActionButton home = (FloatingActionButton) findViewById(R.id.home);
+        FloatingActionButton homebutton = (FloatingActionButton) findViewById(R.id.fabhome);
 
-        home.setOnClickListener(new View.OnClickListener() {
+        homebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
