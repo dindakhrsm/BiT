@@ -36,7 +36,7 @@ public class Topic11Activity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PageMateri3Activity.class);
+                Intent intent = new Intent(getApplicationContext(), Topic11Activity.class);
                 startActivity(intent);
             }
         });
