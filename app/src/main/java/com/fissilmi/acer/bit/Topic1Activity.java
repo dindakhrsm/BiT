@@ -20,15 +20,21 @@ public class Topic1Activity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         mWebView.loadUrl("file:///android_asset/Lesson1.html");
 
-        ImageButton next = (ImageButton) findViewById(R.id.next);
-
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Topic2Activity.class);
-                startActivity(intent);
-            }
-        });
+        // Get the button from the view
+        ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.lesson1);
+        huruf.setOnClickListener(new View.OnClickListener() {
+                                     @Override
+                                     public void onClick(View view) {
+                                         if (mp.isPlaying()) {
+                                             mp.pause();
+                                         }
+                                         else {
+                                             mp.start();
+                                         }
+                                     }
+                                 }
+        );
 
         ImageButton back = (ImageButton) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -36,24 +42,42 @@ public class Topic1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PageMateri1Activity.class);
                 startActivity(intent);
+                mp.stop();
+            }
+
+        });
+
+        ImageButton next = (ImageButton) findViewById(R.id.next);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Topic2Activity.class);
+                startActivity(intent);
+                mp.stop();
             }
         });
-        // Get the button from the view
-        ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
-        final MediaPlayer mp = MediaPlayer.create(this, R.raw.lesson1);
-        huruf.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (mp.isPlaying()) {
-                        mp.pause();
-                    }
-                    else {
-                        mp.start();
-        }
-                }
-        }
-        );
 
+        ImageButton levelButton = (ImageButton) findViewById(R.id.levelButton);
+        levelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), PageMateri1Activity.class);
+                startActivity(intent);
+                mp.stop();
+            }
+
+        });
+
+        ImageButton homeButton = (ImageButton) findViewById(R.id.homeButton);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                mp.stop();
+            }
+
+        });
     }
 
 }

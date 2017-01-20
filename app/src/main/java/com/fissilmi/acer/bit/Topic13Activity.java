@@ -20,25 +20,6 @@ public class Topic13Activity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         mWebView.loadUrl("file:///android_asset/tasydidashli.html");
 
-        ImageButton next = (ImageButton) findViewById(R.id.next);
-
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Question3Activity.class);
-                startActivity(intent);
-            }
-        });
-
-        ImageButton back = (ImageButton) findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Topic12Activity.class);
-                startActivity(intent);
-            }
-        });
-
         ImageButton huruf = (ImageButton) this.findViewById(R.id.huruf);
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.tasydidashli);
         huruf.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +31,48 @@ public class Topic13Activity extends AppCompatActivity {
                     mp.start();
                 }
             }
+        });
+
+        ImageButton back = (ImageButton) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Topic12Activity.class);
+                startActivity(intent);
+                mp.stop();
+            }
+        });
+
+        ImageButton next = (ImageButton) findViewById(R.id.next);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Question3Activity.class);
+                startActivity(intent);
+                mp.stop();
+            }
+        });
+
+        ImageButton levelButton = (ImageButton) findViewById(R.id.levelButton);
+        levelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), PageMateri3Activity.class);
+                startActivity(intent);
+                mp.stop();
+            }
+
+        });
+
+        ImageButton homeButton = (ImageButton) findViewById(R.id.homeButton);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                mp.stop();
+            }
+
         });
 
 
